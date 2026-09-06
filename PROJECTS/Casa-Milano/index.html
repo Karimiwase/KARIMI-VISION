@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Casa Milano — authentic Italian cuisine, handmade pasta and unforgettable dining.">
+    <title>Casa Milano | Italian Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span>CASA</span> MILANO
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-button">Book a Table</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">AUTHENTIC ITALIAN CUISINE</p>
+
+                <h1>
+                    Taste Italy.<br>
+                    <span>Feel at Home.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Handmade pasta, wood-fired pizza and classic Italian flavors
+                    made with passion and the finest ingredients.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#booking" class="primary-button">Book a Table</a>
+                    <a href="#menu" class="secondary-button">View Menu</a>
+                </div>
+            </div>
+
+            <div class="scroll-down">
+                <span></span>
+                Scroll to explore
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85"
+                    alt="Casa Milano restaurant interior">
+                <div class="image-card">
+                    <strong>Since 2012</strong>
+                    <span>Made with love in Italy</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <p class="section-label">OUR STORY</p>
+
+                <h2>A little taste of <em>Italy</em> in every dish.</h2>
+
+                <p>
+                    Casa Milano was created from a simple idea: bring the warmth,
+                    flavors and traditions of Italy to every table.
+                </p>
+
+                <p>
+                    From our handmade pasta to our wood-fired pizzas, everything
+                    is prepared with carefully selected ingredients and recipes
+                    inspired by generations of Italian cooking.
+                </p>
+
+                <a href="#menu" class="text-link">Discover our menu →</a>
+            </div>
+        </section>
+
+
+        <!-- MENU -->
+        <section class="menu-section section" id="menu">
+            <div class="section-heading">
+                <p class="section-label">OUR MENU</p>
+                <h2>Made fresh. <em>Served with love.</em></h2>
+                <p>
+                    Traditional Italian dishes with a modern Casa Milano touch.
+                </p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-button active" data-category="pasta">Pasta</button>
+                <button class="tab-button" data-category="pizza">Pizza</button>
+                <button class="tab-button" data-category="mains">Mains</button>
+                <button class="tab-button" data-category="desserts">Desserts</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+
+                <article class="menu-item" data-category="pasta">
+                    <div>
+                        <h3>Truffle Tagliatelle</h3>
+                        <p>Fresh tagliatelle, black truffle, parmesan & butter.</p>
+                    </div>
+                    <strong>€19</strong>
+                </article>
+
+                <article class="menu-item" data-category="pasta">
+                    <div>
+                        <h3>Spaghetti Pomodoro</h3>
+                        <p>San Marzano tomatoes, basil, garlic & parmesan.</p>
+                    </div>
+                    <strong>€15</strong>
+                </article>
+
+                <article class="menu-item" data-category="pasta">
+                    <div>
+                        <h3>Rigatoni Piccante</h3>
+                        <p>Tomato sugo, spicy nduja, pecorino & fresh basil.</p>
+                    </div>
+                    <strong>€17</strong>
+                </article>
+
+                <article class="menu-item" data-category="pasta">
+                    <div>
+                        <h3>Ravioli Ricotta</h3>
+                        <p>Ricotta ravioli, sage butter, lemon & parmesan.</p>
+                    </div>
+                    <strong>€18</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="pizza">
+                    <div>
+                        <h3>Margherita</h3>
+                        <p>San Marzano tomato, mozzarella, basil & olive oil.</p>
+                    </div>
+                    <strong>€14</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="pizza">
+                    <div>
+                        <h3>Diavola</h3>
+                        <p>Tomato, mozzarella, spicy salami & fresh chilli.</p>
+                    </div>
+                    <strong>€17</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="pizza">
+                    <div>
+                        <h3>Prosciutto e Rucola</h3>
+                        <p>Parma ham, mozzarella, rocket & parmesan.</p>
+                    </div>
+                    <strong>€18</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="pizza">
+                    <div>
+                        <h3>Quattro Formaggi</h3>
+                        <p>Mozzarella, gorgonzola, parmesan & pecorino.</p>
+                    </div>
+                    <strong>€18</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="mains">
+                    <div>
+                        <h3>Chicken Milanese</h3>
+                        <p>Crispy chicken, rocket salad, lemon & parmesan.</p>
+                    </div>
+                    <strong>€23</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="mains">
+                    <div>
+                        <h3>Branzino</h3>
+                        <p>Grilled sea bass, roasted vegetables & lemon butter.</p>
+                    </div>
+                    <strong>€26</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="mains">
+                    <div>
+                        <h3>Filetto di Manzo</h3>
+                        <p>Beef tenderloin, rosemary potatoes & red wine jus.</p>
+                    </div>
+                    <strong>€29</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="mains">
+                    <div>
+                        <h3>Eggplant Parmigiana</h3>
+                        <p>Roasted eggplant, tomato, mozzarella & parmesan.</p>
+                    </div>
+                    <strong>€19</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="desserts">
+                    <div>
+                        <h3>Tiramisu</h3>
+                        <p>Espresso-soaked ladyfingers, mascarpone & cocoa.</p>
+                    </div>
+                    <strong>€9</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="desserts">
+                    <div>
+                        <h3>Panna Cotta</h3>
+                        <p>Vanilla panna cotta with seasonal berries.</p>
+                    </div>
+                    <strong>€8</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="desserts">
+                    <div>
+                        <h3>Affogato</h3>
+                        <p>Vanilla gelato, fresh espresso & chocolate.</p>
+                    </div>
+                    <strong>€7</strong>
+                </article>
+
+                <article class="menu-item hidden-item" data-category="desserts">
+                    <div>
+                        <h3>Chocolate Fondant</h3>
+                        <p>Warm chocolate cake with vanilla gelato.</p>
+                    </div>
+                    <strong>€10</strong>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SPECIAL -->
+        <section class="special">
+            <div class="special-content">
+                <p class="section-label">CHEF'S SPECIAL</p>
+                <h2>Sunday in <em>Milano</em></h2>
+                <p>
+                    Three courses inspired by the flavors of Northern Italy,
+                    available every Sunday evening.
+                </p>
+                <strong>€39 per person</strong>
+                <a href="#booking" class="primary-button">Reserve Your Table</a>
+            </div>
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery section" id="gallery">
+            <div class="section-heading">
+                <p class="section-label">THE EXPERIENCE</p>
+                <h2>Welcome to <em>Casa Milano.</em></h2>
+            </div>
+
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=900&q=85"
+                    alt="Italian pasta">
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=85"
+                    alt="Italian pizza">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=85"
+                    alt="Fresh pasta dish">
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=85"
+                    alt="Restaurant table">
+            </div>
+        </section>
+
+
+        <!-- REVIEWS -->
+        <section class="reviews section" id="reviews">
+            <div class="section-heading">
+                <p class="section-label">GUESTS LOVE US</p>
+                <h2>What our guests <em>say.</em></h2>
+            </div>
+
+            <div class="reviews-grid">
+
+                <article class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        “Absolutely incredible. The pasta tasted like something
+                        I had in Italy. Beautiful atmosphere and amazing service.”
+                    </p>
+                    <strong>— Sofia M.</strong>
+                </article>
+
+                <article class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        “One of the best Italian restaurants we've visited.
+                        The truffle tagliatelle was unbelievable.”
+                    </p>
+                    <strong>— Daniel R.</strong>
+                </article>
+
+                <article class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        “Perfect place for a date night. Great food, great
+                        atmosphere and genuinely friendly staff.”
+                    </p>
+                    <strong>— Emma L.</strong>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- BOOKING -->
+        <section class="booking section" id="booking">
+            <div class="booking-info">
+                <p class="section-label">RESERVATIONS</p>
+                <h2>Your table is <em>waiting.</em></h2>
+                <p>
+                    Planning a dinner, celebration or special evening?
+                    Reserve your table and let us take care of the rest.
+                </p>
+
+                <div class="contact-detail">
+                    <span>📞</span>
+                    <div>
+                        <small>CALL US</small>
+                        <strong>+46 40 123 456</strong>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span>✉</span>
+                    <div>
+                        <small>EMAIL</small>
+                        <strong>hello@casamilano.se</strong>
+                    </div>
+                </div>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="">Select</option>
+                            <option>1 guest</option>
+                            <option>2 guests</option>
+                            <option>3 guests</option>
+                            <option>4 guests</option>
+                            <option>5 guests</option>
+                            <option>6+ guests</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" required>
+                            <option value="">Select</option>
+                            <option>17:00</option>
+                            <option>17:30</option>
+                            <option>18:00</option>
+                            <option>18:30</option>
+                            <option>19:00</option>
+                            <option>19:30</option>
+                            <option>20:00</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Special requests</label>
+                    <textarea id="message" placeholder="Birthday, allergies, special occasion..."></textarea>
+                </div>
+
+                <button type="submit" class="primary-button full-button">
+                    Request Reservation
+                </button>
+
+                <p class="form-note" id="formMessage"></p>
+
+            </form>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <span>📍</span>
+                    <strong>Casa Milano</strong>
+                    <p>Stortorget 12, Malmö</p>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <p class="section-label">COME VISIT US</p>
+                <h2>Let's make it a <em>night to remember.</em></h2>
+
+                <div class="hours">
+                    <div>
+                        <span>Monday – Thursday</span>
+                        <strong>17:00 – 22:00</strong>
+                    </div>
+
+                    <div>
+                        <span>Friday – Saturday</span>
+                        <strong>17:00 – 23:00</strong>
+                    </div>
+
+                    <div>
+                        <span>Sunday</span>
+                        <strong>16:00 – 21:00</strong>
+                    </div>
+                </div>
+
+                <a href="#booking" class="primary-button">Book a Table</a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+
+            <div>
+                <a href="#home" class="logo">
+                    <span>CASA</span> MILANO
+                </a>
+
+                <p>
+                    Authentic Italian cuisine,<br>
+                    made with passion.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Casa Milano. Demo website.</span>
+            <span>Made with passion.</span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

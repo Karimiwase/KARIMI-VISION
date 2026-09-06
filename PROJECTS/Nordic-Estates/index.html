@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nordic Estates — Premium real estate across Sweden.">
+    <title>Nordic Estates | Find Your Place</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-mark">N</span>
+            <span>NORDIC <strong>ESTATES</strong></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#properties">Properties</a>
+            <a href="#areas">Areas</a>
+            <a href="#agents">Our Agents</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="saved-btn" id="savedBtn">
+                ♡ <span>Saved</span>
+                <b id="savedCount">0</b>
+            </button>
+            <a href="#contact" class="nav-contact">Get in touch</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#properties">Properties</a>
+        <a href="#areas">Areas</a>
+        <a href="#agents">Our Agents</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span></span>
+                    PREMIUM REAL ESTATE
+                </div>
+
+                <h1>
+                    Find a place<br>
+                    <em>worth calling home.</em>
+                </h1>
+
+                <p>
+                    Exceptional homes. Prime locations. A better way
+                    to find your next chapter.
+                </p>
+
+                <div class="search-box">
+
+                    <div class="search-field">
+                        <label>LOCATION</label>
+                        <div>
+                            <span>⌖</span>
+                            <select id="locationFilter">
+                                <option value="all">All locations</option>
+                                <option value="Stockholm">Stockholm</option>
+                                <option value="Malmö">Malmö</option>
+                                <option value="Gothenburg">Gothenburg</option>
+                                <option value="Lund">Lund</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search-field">
+                        <label>PROPERTY TYPE</label>
+                        <div>
+                            <span>⌂</span>
+                            <select id="typeFilter">
+                                <option value="all">All types</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Penthouse">Penthouse</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search-field">
+                        <label>MAX PRICE</label>
+                        <div>
+                            <span>€</span>
+                            <select id="priceFilter">
+                                <option value="all">Any price</option>
+                                <option value="500000">€500k</option>
+                                <option value="1000000">€1M</option>
+                                <option value="2000000">€2M</option>
+                                <option value="3000000">€3M</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="search-btn" id="searchBtn">
+                        Search
+                        <span>→</span>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+                <span>01 / 04</span>
+            </div>
+
+        </section>
+
+        <!-- STATS -->
+        <section class="stats">
+            <div class="stat">
+                <strong>850+</strong>
+                <span>Homes sold</span>
+            </div>
+
+            <div class="stat">
+                <strong>24</strong>
+                <span>Prime locations</span>
+            </div>
+
+            <div class="stat">
+                <strong>12</strong>
+                <span>Years of experience</span>
+            </div>
+
+            <div class="stat">
+                <strong>98%</strong>
+                <span>Client satisfaction</span>
+            </div>
+        </section>
+
+        <!-- PROPERTIES -->
+        <section class="properties-section" id="properties">
+
+            <div class="section-header reveal">
+                <div>
+                    <span class="section-label">CURATED COLLECTION</span>
+                    <h2>Featured properties</h2>
+                </div>
+
+                <a href="#properties" class="view-all">
+                    View all properties →
+                </a>
+            </div>
+
+            <div class="property-grid" id="propertyGrid">
+
+                <!-- PROPERTY 1 -->
+                <article class="property-card reveal" data-location="Malmö" data-type="Villa" data-price="1250000"
+                    data-id="1">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                            alt="Modern villa">
+
+                        <div class="property-tag">FEATURED</div>
+
+                        <button class="favorite-btn" data-id="1">♡</button>
+
+                        <div class="property-status">For sale</div>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-top">
+                            <div>
+                                <span class="property-type">VILLA</span>
+                                <h3>Scandinavian Villa</h3>
+                            </div>
+                            <strong class="price">€1,250,000</strong>
+                        </div>
+
+                        <p class="location">⌖ Limhamn, Malmö</p>
+
+                        <div class="property-meta">
+                            <span>🛏 4 beds</span>
+                            <span>♙ 3 baths</span>
+                            <span>▱ 218 m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROPERTY 2 -->
+                <article class="property-card reveal" data-location="Stockholm" data-type="Penthouse"
+                    data-price="2850000" data-id="2">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85"
+                            alt="Luxury penthouse">
+
+                        <div class="property-tag">NEW</div>
+
+                        <button class="favorite-btn" data-id="2">♡</button>
+
+                        <div class="property-status">For sale</div>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-top">
+                            <div>
+                                <span class="property-type">PENTHOUSE</span>
+                                <h3>Skyline Residence</h3>
+                            </div>
+                            <strong class="price">€2,850,000</strong>
+                        </div>
+
+                        <p class="location">⌖ Östermalm, Stockholm</p>
+
+                        <div class="property-meta">
+                            <span>🛏 3 beds</span>
+                            <span>♙ 2 baths</span>
+                            <span>▱ 164 m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROPERTY 3 -->
+                <article class="property-card reveal" data-location="Gothenburg" data-type="Apartment"
+                    data-price="695000" data-id="3">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                            alt="Modern apartment">
+
+                        <div class="property-tag">POPULAR</div>
+
+                        <button class="favorite-btn" data-id="3">♡</button>
+
+                        <div class="property-status">For sale</div>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-top">
+                            <div>
+                                <span class="property-type">APARTMENT</span>
+                                <h3>Harbour Residence</h3>
+                            </div>
+                            <strong class="price">€695,000</strong>
+                        </div>
+
+                        <p class="location">⌖ Haga, Gothenburg</p>
+
+                        <div class="property-meta">
+                            <span>🛏 2 beds</span>
+                            <span>♙ 2 baths</span>
+                            <span>▱ 92 m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROPERTY 4 -->
+                <article class="property-card reveal" data-location="Lund" data-type="Villa" data-price="920000"
+                    data-id="4">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+                            alt="Luxury home">
+
+                        <div class="property-tag">EXCLUSIVE</div>
+
+                        <button class="favorite-btn" data-id="4">♡</button>
+
+                        <div class="property-status">For sale</div>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-top">
+                            <div>
+                                <span class="property-type">VILLA</span>
+                                <h3>The Garden House</h3>
+                            </div>
+                            <strong class="price">€920,000</strong>
+                        </div>
+
+                        <p class="location">⌖ Sankt Lars, Lund</p>
+
+                        <div class="property-meta">
+                            <span>🛏 5 beds</span>
+                            <span>♙ 3 baths</span>
+                            <span>▱ 241 m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROPERTY 5 -->
+                <article class="property-card reveal" data-location="Stockholm" data-type="Apartment"
+                    data-price="485000" data-id="5">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+                            alt="Elegant apartment">
+
+                        <div class="property-tag">JUST LISTED</div>
+
+                        <button class="favorite-btn" data-id="5">♡</button>
+
+                        <div class="property-status">For sale</div>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-top">
+                            <div>
+                                <span class="property-type">APARTMENT</span>
+                                <h3>Nordic Loft</h3>
+                            </div>
+                            <strong class="price">€485,000</strong>
+                        </div>
+
+                        <p class="location">⌖ Södermalm, Stockholm</p>
+
+                        <div class="property-meta">
+                            <span>🛏 1 bed</span>
+                            <span>♙ 1 bath</span>
+                            <span>▱ 58 m²</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROPERTY 6 -->
+                <article class="property-card reveal" data-location="Malmö" data-type="Penthouse" data-price="1590000"
+                    data-id="6">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+                            alt="Luxury penthouse">
+
+                        <div class="property-tag">PREMIUM</div>
+
+                        <button class="favorite-btn" data-id="6">♡</button>
+
+                        <div class="property-status">For sale</div>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-top">
+                            <div>
+                                <span class="property-type">PENTHOUSE</span>
+                                <h3>Ocean View Penthouse</h3>
+                            </div>
+                            <strong class="price">€1,590,000</strong>
+                        </div>
+
+                        <p class="location">⌖ Västra Hamnen, Malmö</p>
+
+                        <div class="property-meta">
+                            <span>🛏 3 beds</span>
+                            <span>♙ 2 baths</span>
+                            <span>▱ 143 m²</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="no-results" id="noResults">
+                <div>⌂</div>
+                <h3>No properties found</h3>
+                <p>Try changing your search filters.</p>
+            </div>
+
+        </section>
+
+        <!-- AREAS -->
+        <section class="areas-section" id="areas">
+
+            <div class="section-header light reveal">
+                <div>
+                    <span class="section-label">EXPLORE SWEDEN</span>
+                    <h2>Find your area</h2>
+                </div>
+
+                <p>
+                    From coastal living to vibrant city life,
+                    discover places worth putting down roots.
+                </p>
+            </div>
+
+            <div class="areas-grid">
+
+                <div class="area-card large reveal">
+                    <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1400&q=85"
+                        alt="Stockholm">
+                    <div class="area-overlay"></div>
+                    <div class="area-content">
+                        <span>01</span>
+                        <h3>Stockholm</h3>
+                        <p>142 properties</p>
+                    </div>
+                </div>
+
+                <div class="area-card reveal">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=85"
+                        alt="Malmö">
+                    <div class="area-overlay"></div>
+                    <div class="area-content">
+                        <span>02</span>
+                        <h3>Malmö</h3>
+                        <p>86 properties</p>
+                    </div>
+                </div>
+
+                <div class="area-card reveal">
+                    <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=1000&q=85"
+                        alt="Gothenburg">
+                    <div class="area-overlay"></div>
+                    <div class="area-content">
+                        <span>03</span>
+                        <h3>Gothenburg</h3>
+                        <p>74 properties</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHY US -->
+        <section class="about-section" id="about">
+
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                    alt="Luxury interior">
+
+                <div class="experience-card">
+                    <strong>12</strong>
+                    <span>Years of<br>experience</span>
+                </div>
+            </div>
+
+            <div class="about-content reveal">
+                <span class="section-label">WHY NORDIC ESTATES</span>
+
+                <h2>Real estate,<br><em>reimagined.</em></h2>
+
+                <p class="lead">
+                    We believe buying a home should feel exciting,
+                    not overwhelming.
+                </p>
+
+                <p>
+                    Nordic Estates combines local expertise, modern
+                    technology and a personal approach to create a
+                    property experience built around you.
+                </p>
+
+                <div class="about-points">
+                    <div>
+                        <span>01</span>
+                        <div>
+                            <h4>Local expertise</h4>
+                            <p>Deep knowledge of the neighborhoods we serve.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <div>
+                            <h4>Personal service</h4>
+                            <p>One dedicated agent from start to finish.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <div>
+                            <h4>Modern approach</h4>
+                            <p>Smarter tools and better ways to discover homes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="dark-btn">
+                    Meet our team →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- AGENTS -->
+        <section class="agents-section" id="agents">
+
+            <div class="section-header reveal">
+                <div>
+                    <span class="section-label">THE PEOPLE BEHIND THE DEAL</span>
+                    <h2>Meet our agents</h2>
+                </div>
+                <p>
+                    Experienced professionals who know the market
+                    and understand what home means to you.
+                </p>
+            </div>
+
+            <div class="agents-grid">
+
+                <article class="agent-card reveal">
+                    <div class="agent-image">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=85"
+                            alt="Emma Lind">
+                    </div>
+                    <div class="agent-info">
+                        <span>SENIOR AGENT</span>
+                        <h3>Emma Lind</h3>
+                        <p>Stockholm · Luxury Homes</p>
+                        <a href="#contact">Contact Emma →</a>
+                    </div>
+                </article>
+
+                <article class="agent-card reveal">
+                    <div class="agent-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=85"
+                            alt="Alexander Berg">
+                    </div>
+                    <div class="agent-info">
+                        <span>PROPERTY ADVISOR</span>
+                        <h3>Alexander Berg</h3>
+                        <p>Malmö · Residential</p>
+                        <a href="#contact">Contact Alexander →</a>
+                    </div>
+                </article>
+
+                <article class="agent-card reveal">
+                    <div class="agent-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=85"
+                            alt="Sofia Nilsson">
+                    </div>
+                    <div class="agent-info">
+                        <span>SENIOR AGENT</span>
+                        <h3>Sofia Nilsson</h3>
+                        <p>Gothenburg · Premium Homes</p>
+                        <a href="#contact">Contact Sofia →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonial-section">
+
+            <div class="quote-mark">“</div>
+
+            <div class="testimonial reveal">
+                <span class="section-label">CLIENT STORIES</span>
+
+                <blockquote>
+                    Nordic Estates made the entire process feel
+                    effortless. We found our dream home in less
+                    than three weeks.
+                </blockquote>
+
+                <div class="testimonial-author">
+                    <div class="author-avatar">JL</div>
+                    <div>
+                        <strong>Julia &amp; Leo</strong>
+                        <span>Homeowners · Malmö</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CONTACT CTA -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-content reveal">
+                <span class="section-label">LET'S TALK</span>
+
+                <h2>Ready to find<br><em>your place?</em></h2>
+
+                <p>
+                    Tell us what you're looking for and one of our
+                    agents will be in touch.
+                </p>
+
+                <form id="contactForm">
+
+                    <div class="form-row">
+                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="email" id="email" placeholder="Email address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <select id="interest" required>
+                            <option value="">I'm interested in...</option>
+                            <option>Buying a property</option>
+                            <option>Selling my property</option>
+                            <option>Property valuation</option>
+                            <option>General enquiry</option>
+                        </select>
+
+                        <input type="text" id="area" placeholder="Preferred area">
+                    </div>
+
+                    <textarea id="message" placeholder="Tell us a little about what you're looking for..."
+                        rows="4"></textarea>
+
+                    <button type="submit" class="submit-btn">
+                        Send enquiry <span>→</span>
+                    </button>
+
+                </form>
+
+                <div class="form-message" id="formMessage"></div>
+            </div>
+
+            <div class="contact-image reveal">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+                    alt="Modern Nordic home">
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PROPERTY MODAL -->
+    <div class="modal" id="propertyModal">
+
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">×</button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Property">
+                <span id="modalTag">FEATURED</span>
+            </div>
+
+            <div class="modal-details">
+
+                <div>
+                    <span class="property-type" id="modalType">VILLA</span>
+                    <h2 id="modalTitle">Property</h2>
+                    <p class="location" id="modalLocation">Location</p>
+                </div>
+
+                <strong class="modal-price" id="modalPrice">€1,250,000</strong>
+
+                <div class="modal-meta">
+                    <div>
+                        <span>🛏</span>
+                        <strong id="modalBeds">4</strong>
+                        <small>Bedrooms</small>
+                    </div>
+
+                    <div>
+                        <span>♙</span>
+                        <strong id="modalBaths">3</strong>
+                        <small>Bathrooms</small>
+                    </div>
+
+                    <div>
+                        <span>▱</span>
+                        <strong id="modalSize">218 m²</strong>
+                        <small>Living area</small>
+                    </div>
+                </div>
+
+                <p class="modal-description">
+                    A beautifully designed Nordic residence combining
+                    timeless architecture, natural materials and modern
+                    comfort. Designed for sophisticated everyday living.
+                </p>
+
+                <button class="modal-contact" id="modalContact">
+                    Request a viewing →
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-mark">N</span>
+                    <span>NORDIC <strong>ESTATES</strong></span>
+                </a>
+
+                <p>
+                    Exceptional homes.<br>
+                    Extraordinary service.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="#properties">Properties</a>
+                <a href="#areas">Areas</a>
+                <a href="#agents">Our Agents</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Services</h4>
+                <a href="#contact">Buy a home</a>
+                <a href="#contact">Sell a home</a>
+                <a href="#contact">Valuation</a>
+                <a href="#contact">Property advice</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <a href="mailto:hello@nordicestates.se">hello@nordicestates.se</a>
+                <a href="tel:+46101234567">+46 10 123 45 67</a>
+                <span>Malmö · Stockholm · Gothenburg</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Nordic Estates. Demo website.</span>
+
+            <div>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
